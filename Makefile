@@ -1,0 +1,14 @@
+.DEFAULT_GOAL := build
+
+.PHONY:fmt vet build
+fmt:
+	go fmt ./...
+
+vet: fmt
+	go vet ./...
+
+build: vet
+	go build -o bin/courses courses.go
+
+clean:
+	go clean -i ./bin/courses
