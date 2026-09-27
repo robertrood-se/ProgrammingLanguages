@@ -1,0 +1,25 @@
+# Compiled binaries and logs
+# (Go compiler names the binary after the folder by default)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+
+# Test binaries and coverage reports
+*.test
+*.out
+coverage.txt
+
+# Dependency directories
+# (Only needed if you use 'go mod vendor' but choose not to commit the vendor folder)
+# vendor/
+
+# Development environment files
+.env
+.env.local
+
+# IDE configurations
+.idea/
+.vscode/
